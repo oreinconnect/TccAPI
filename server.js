@@ -38,7 +38,7 @@ export default async function handler(req, res) {
     const base64 = bufferReduzido.toString("base64");
 
     // Chama a API de IA (exemplo genérico)
-    const resp = await fetch("https://sua-api-ia.com/analyze", {
+    /*const resp = await fetch("https://sua-api-ia.com/analyze", {
       method: "POST",
       headers: {
         "Authorization": `Bearer ${process.env.IA_KEY}`,
@@ -48,7 +48,7 @@ export default async function handler(req, res) {
         image: `data:image/jpeg;base64,${base64}`,
         prompt: "Classifique o material: plástico, vidro, metal, papel ou orgânico",
       }),
-    });
+    });*/
 
     const result = await resp.json();
 
